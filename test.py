@@ -1,6 +1,6 @@
 def shuchu(tif_file):
     # 打开TIFF文件
-    with raster
+    with rasterio.open(tif_file) as src:
         # 读取所有波段（假设波段顺序为B02, B03, B04, B08, B12）
         bands = src.read()  # 形状为 (波段数, 高度, 宽度)，这里是 (5, height, width)
         # profile = src.profile  # 获取元数据
