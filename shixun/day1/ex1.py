@@ -18,4 +18,3 @@ def my_function():
 
 my_function()
 print(f"Outside function: x={x}")
-
